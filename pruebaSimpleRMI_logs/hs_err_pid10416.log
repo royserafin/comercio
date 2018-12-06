@@ -1,0 +1,413 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=10416, tid=0x0000000000003e74
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_112-b15) (build 1.8.0_112-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.112-b15 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000022a5a000):  JavaThread "C1 CompilerThread3" daemon [_thread_in_native, id=15988, stack(0x0000000023540000,0x0000000023640000)]
+
+Stack: [0x0000000023540000,0x0000000023640000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C1:1659281  866   !   3       sun.rmi.transport.tcp.TCPTransport$ConnectionHandler::run0 (1039 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000241e4800 JavaThread "RMI TCP Connection(364)-127.0.0.1" daemon [_thread_in_native, id=3644, stack(0x000000002dde0000,0x000000002dee0000)]
+  0x00000000241e8000 JavaThread "RMI TCP Connection(354)-127.0.0.1" daemon [_thread_in_native, id=19176, stack(0x000000002dce0000,0x000000002dde0000)]
+  0x00000000241e9000 JavaThread "RMI TCP Connection(345)-127.0.0.1" daemon [_thread_in_native, id=20516, stack(0x000000002dbe0000,0x000000002dce0000)]
+  0x00000000241ea800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=10316, stack(0x000000002dae0000,0x000000002dbe0000)]
+  0x00000000241e7800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=14020, stack(0x000000002d9e0000,0x000000002dae0000)]
+  0x00000000241e6800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=16100, stack(0x000000002d8e0000,0x000000002d9e0000)]
+  0x00000000241e9800 JavaThread "RMI TCP Connection(383)-127.0.0.1" daemon [_thread_in_native, id=26588, stack(0x000000002d7e0000,0x000000002d8e0000)]
+  0x00000000241ce800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26572, stack(0x000000002d6e0000,0x000000002d7e0000)]
+  0x00000000241cd800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26568, stack(0x000000002d5e0000,0x000000002d6e0000)]
+  0x00000000241cd000 JavaThread "RMI TCP Connection(353)-127.0.0.1" daemon [_thread_in_native, id=26560, stack(0x000000002d4e0000,0x000000002d5e0000)]
+  0x00000000241cc000 JavaThread "RMI TCP Connection(380)-127.0.0.1" daemon [_thread_in_native, id=26556, stack(0x000000002d3e0000,0x000000002d4e0000)]
+  0x00000000241cb800 JavaThread "RMI TCP Connection(373)-127.0.0.1" daemon [_thread_in_native, id=26552, stack(0x000000002d2e0000,0x000000002d3e0000)]
+  0x00000000241c4800 JavaThread "RMI TCP Connection(351)-127.0.0.1" daemon [_thread_in_native, id=26548, stack(0x000000002d1e0000,0x000000002d2e0000)]
+  0x00000000241c4000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26544, stack(0x000000002d0e0000,0x000000002d1e0000)]
+  0x00000000241ca800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26496, stack(0x000000002cfe0000,0x000000002d0e0000)]
+  0x00000000241c3000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26464, stack(0x000000002cee0000,0x000000002cfe0000)]
+  0x00000000241ca000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26460, stack(0x000000002cde0000,0x000000002cee0000)]
+  0x00000000241c2800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26456, stack(0x000000002cce0000,0x000000002cde0000)]
+  0x00000000241c9000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26452, stack(0x000000002cbe0000,0x000000002cce0000)]
+  0x00000000241c1800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26448, stack(0x000000002cae0000,0x000000002cbe0000)]
+  0x00000000241c7800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26428, stack(0x000000002c9e0000,0x000000002cae0000)]
+  0x00000000241c7000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26424, stack(0x000000002c8e0000,0x000000002c9e0000)]
+  0x00000000241c6000 JavaThread "RMI TCP Connection(381)-127.0.0.1" daemon [_thread_in_native, id=26416, stack(0x000000002c7e0000,0x000000002c8e0000)]
+  0x00000000241c5800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26408, stack(0x000000002c6e0000,0x000000002c7e0000)]
+  0x00000000241c8800 JavaThread "RMI TCP Connection(341)-127.0.0.1" daemon [_thread_in_native, id=26404, stack(0x000000002c5e0000,0x000000002c6e0000)]
+  0x00000000241bf800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26400, stack(0x000000002c4e0000,0x000000002c5e0000)]
+  0x00000000241c1000 JavaThread "RMI TCP Connection(378)-127.0.0.1" daemon [_thread_in_native, id=26364, stack(0x000000002c3e0000,0x000000002c4e0000)]
+  0x00000000241c0000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26360, stack(0x000000002c2e0000,0x000000002c3e0000)]
+  0x0000000022cd4000 JavaThread "RMI TCP Connection(382)-127.0.0.1" daemon [_thread_in_native, id=26356, stack(0x000000002c1e0000,0x000000002c2e0000)]
+  0x0000000022cd7000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26256, stack(0x000000002c0e0000,0x000000002c1e0000)]
+  0x0000000022cd3800 JavaThread "RMI TCP Connection(347)-127.0.0.1" daemon [_thread_in_native, id=26252, stack(0x000000002bfe0000,0x000000002c0e0000)]
+  0x0000000022cd8000 JavaThread "RMI TCP Connection(370)-127.0.0.1" daemon [_thread_in_native, id=26224, stack(0x000000002bee0000,0x000000002bfe0000)]
+  0x0000000022cd6800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26116, stack(0x000000002bde0000,0x000000002bee0000)]
+  0x0000000022cd5800 JavaThread "RMI TCP Connection(379)-127.0.0.1" daemon [_thread_in_native, id=26112, stack(0x000000002bce0000,0x000000002bde0000)]
+  0x0000000022cd9800 JavaThread "RMI TCP Connection(361)-127.0.0.1" daemon [_thread_in_native, id=26092, stack(0x000000002bbe0000,0x000000002bce0000)]
+  0x0000000022cd9000 JavaThread "RMI TCP Connection(372)-127.0.0.1" daemon [_thread_in_native, id=26088, stack(0x000000002bae0000,0x000000002bbe0000)]
+  0x0000000022cd5000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26084, stack(0x000000002b9e0000,0x000000002bae0000)]
+  0x0000000022ccc000 JavaThread "RMI TCP Connection(360)-127.0.0.1" daemon [_thread_in_native, id=26080, stack(0x000000002b8e0000,0x000000002b9e0000)]
+  0x0000000022cd2800 JavaThread "RMI TCP Connection(376)-127.0.0.1" daemon [_thread_in_native, id=26076, stack(0x000000002b7e0000,0x000000002b8e0000)]
+  0x0000000022ccc800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26072, stack(0x000000002b6e0000,0x000000002b7e0000)]
+  0x0000000022ccb000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26068, stack(0x000000002b5e0000,0x000000002b6e0000)]
+  0x0000000022ccf800 JavaThread "RMI TCP Connection(384)-127.0.0.1" daemon [_thread_in_native, id=26064, stack(0x000000002b4e0000,0x000000002b5e0000)]
+  0x0000000022cd2000 JavaThread "RMI TCP Connection(374)-127.0.0.1" daemon [_thread_in_native, id=26056, stack(0x000000002b3e0000,0x000000002b4e0000)]
+  0x0000000022cca800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=26040, stack(0x000000002b2e0000,0x000000002b3e0000)]
+  0x0000000022cd1000 JavaThread "RMI TCP Connection(369)-127.0.0.1" daemon [_thread_in_native, id=26036, stack(0x000000002b1e0000,0x000000002b2e0000)]
+  0x0000000022ccf000 JavaThread "RMI TCP Connection(375)-127.0.0.1" daemon [_thread_in_native, id=26032, stack(0x000000002b0e0000,0x000000002b1e0000)]
+  0x0000000022cd0800 JavaThread "RMI TCP Connection(365)-127.0.0.1" daemon [_thread_in_native, id=25996, stack(0x000000002afe0000,0x000000002b0e0000)]
+  0x0000000022ccd800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=25976, stack(0x000000002aee0000,0x000000002afe0000)]
+  0x0000000022cce000 JavaThread "RMI TCP Connection(342)-127.0.0.1" daemon [_thread_in_native, id=6360, stack(0x000000002ade0000,0x000000002aee0000)]
+  0x0000000022def000 JavaThread "RMI TCP Connection(359)-127.0.0.1" daemon [_thread_in_native, id=10048, stack(0x000000002ace0000,0x000000002ade0000)]
+  0x0000000022dee000 JavaThread "RMI TCP Connection(336)-127.0.0.1" daemon [_thread_in_native, id=15636, stack(0x000000002abe0000,0x000000002ace0000)]
+  0x0000000022ded800 JavaThread "RMI TCP Connection(350)-127.0.0.1" daemon [_thread_in_native, id=2440, stack(0x000000002aae0000,0x000000002abe0000)]
+  0x0000000022dec800 JavaThread "RMI TCP Connection(358)-127.0.0.1" daemon [_thread_in_native, id=7764, stack(0x000000002a9e0000,0x000000002aae0000)]
+  0x0000000022dec000 JavaThread "RMI TCP Connection(349)-127.0.0.1" daemon [_thread_in_native, id=21340, stack(0x000000002a8e0000,0x000000002a9e0000)]
+  0x0000000022de4800 JavaThread "RMI TCP Connection(343)-127.0.0.1" daemon [_thread_in_native, id=16496, stack(0x000000002a7e0000,0x000000002a8e0000)]
+  0x0000000022deb000 JavaThread "RMI TCP Connection(329)-127.0.0.1" daemon [_thread_in_native, id=2408, stack(0x000000002a6e0000,0x000000002a7e0000)]
+  0x0000000022dea800 JavaThread "RMI TCP Connection(363)-127.0.0.1" daemon [_thread_in_native, id=344, stack(0x000000002a5e0000,0x000000002a6e0000)]
+  0x0000000022de3000 JavaThread "RMI TCP Connection(368)-127.0.0.1" daemon [_thread_in_native, id=21416, stack(0x000000002a4e0000,0x000000002a5e0000)]
+  0x0000000022de9800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=21452, stack(0x000000002a3e0000,0x000000002a4e0000)]
+  0x0000000022de3800 JavaThread "RMI TCP Connection(334)-127.0.0.1" daemon [_thread_in_native, id=20428, stack(0x000000002a2e0000,0x000000002a3e0000)]
+  0x0000000022de9000 JavaThread "RMI TCP Connection(331)-127.0.0.1" daemon [_thread_in_native, id=20588, stack(0x000000002a1e0000,0x000000002a2e0000)]
+  0x0000000022de8000 JavaThread "RMI TCP Connection(333)-127.0.0.1" daemon [_thread_in_native, id=21064, stack(0x000000002a0e0000,0x000000002a1e0000)]
+  0x0000000022de0800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20560, stack(0x0000000029fe0000,0x000000002a0e0000)]
+  0x0000000022de7800 JavaThread "RMI TCP Connection(377)-127.0.0.1" daemon [_thread_in_native, id=20532, stack(0x0000000029ee0000,0x0000000029fe0000)]
+  0x0000000022de6000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20556, stack(0x0000000029de0000,0x0000000029ee0000)]
+  0x0000000022de2000 JavaThread "RMI TCP Connection(326)-127.0.0.1" daemon [_thread_in_native, id=20548, stack(0x0000000029ce0000,0x0000000029de0000)]
+  0x0000000022de5000 JavaThread "RMI TCP Connection(362)-127.0.0.1" daemon [_thread_in_native, id=20508, stack(0x0000000029be0000,0x0000000029ce0000)]
+  0x0000000022de6800 JavaThread "RMI TCP Connection(352)-127.0.0.1" daemon [_thread_in_native, id=20680, stack(0x0000000029ae0000,0x0000000029be0000)]
+  0x0000000022de1800 JavaThread "RMI TCP Connection(371)-127.0.0.1" daemon [_thread_in_native, id=20552, stack(0x00000000299e0000,0x0000000029ae0000)]
+  0x0000000022de0000 JavaThread "RMI TCP Connection(366)-127.0.0.1" daemon [_thread_in_native, id=20708, stack(0x00000000298e0000,0x00000000299e0000)]
+  0x0000000022d5c000 JavaThread "RMI TCP Connection(338)-127.0.0.1" daemon [_thread_in_native, id=21072, stack(0x00000000297e0000,0x00000000298e0000)]
+  0x0000000022d5c800 JavaThread "RMI TCP Connection(332)-127.0.0.1" daemon [_thread_in_native, id=20924, stack(0x00000000296e0000,0x00000000297e0000)]
+  0x0000000022d5b000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20568, stack(0x00000000295e0000,0x00000000296e0000)]
+  0x0000000022d59800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20540, stack(0x00000000294e0000,0x00000000295e0000)]
+  0x0000000022d58800 JavaThread "RMI TCP Connection(344)-127.0.0.1" daemon [_thread_in_native, id=21084, stack(0x00000000293e0000,0x00000000294e0000)]
+  0x0000000022d5a000 JavaThread "RMI TCP Connection(367)-127.0.0.1" daemon [_thread_in_native, id=20564, stack(0x00000000292e0000,0x00000000293e0000)]
+  0x0000000022d58000 JavaThread "RMI TCP Connection(357)-127.0.0.1" daemon [_thread_in_native, id=21104, stack(0x00000000291e0000,0x00000000292e0000)]
+  0x0000000022d5d800 JavaThread "RMI TCP Connection(348)-127.0.0.1" daemon [_thread_in_native, id=20328, stack(0x00000000290e0000,0x00000000291e0000)]
+  0x0000000022d50800 JavaThread "RMI TCP Connection(330)-127.0.0.1" daemon [_thread_in_native, id=20216, stack(0x0000000028fe0000,0x00000000290e0000)]
+  0x0000000022d57000 JavaThread "RMI TCP Connection(339)-127.0.0.1" daemon [_thread_in_native, id=20400, stack(0x0000000028ee0000,0x0000000028fe0000)]
+  0x0000000022d56800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20224, stack(0x0000000028de0000,0x0000000028ee0000)]
+  0x0000000022d55800 JavaThread "RMI TCP Connection(346)-127.0.0.1" daemon [_thread_in_native, id=20396, stack(0x0000000028ce0000,0x0000000028de0000)]
+  0x0000000022d4e000 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=20188, stack(0x0000000028be0000,0x0000000028ce0000)]
+  0x0000000022d55000 JavaThread "RMI TCP Connection(340)-127.0.0.1" daemon [_thread_in_native, id=20208, stack(0x0000000028ae0000,0x0000000028be0000)]
+  0x0000000022d4f800 JavaThread "RMI TCP Connection(337)-127.0.0.1" daemon [_thread_in_native, id=20128, stack(0x00000000289e0000,0x0000000028ae0000)]
+  0x0000000022d54000 JavaThread "RMI TCP Connection(335)-127.0.0.1" daemon [_thread_in_native, id=20292, stack(0x00000000288e0000,0x00000000289e0000)]
+  0x0000000022d51000 JavaThread "RMI TCP Connection(356)-127.0.0.1" daemon [_thread_in_native, id=11700, stack(0x00000000287e0000,0x00000000288e0000)]
+  0x0000000022d53800 JavaThread "RMI TCP Connection(327)-127.0.0.1" daemon [_thread_in_native, id=21144, stack(0x00000000286e0000,0x00000000287e0000)]
+  0x0000000022d52800 JavaThread "RMI TCP Connection(idle)" daemon [_thread_blocked, id=11640, stack(0x00000000285e0000,0x00000000286e0000)]
+  0x0000000022d4f000 JavaThread "RMI TCP Connection(328)-127.0.0.1" daemon [_thread_in_native, id=18108, stack(0x00000000284e0000,0x00000000285e0000)]
+  0x0000000022d52000 JavaThread "RMI TCP Connection(355)-127.0.0.1" daemon [_thread_in_native, id=20172, stack(0x00000000283e0000,0x00000000284e0000)]
+  0x0000000023fff800 JavaThread "RMI RenewClean-[192.168.56.1:55273]" daemon [_thread_blocked, id=16432, stack(0x0000000024fe0000,0x00000000250e0000)]
+  0x00000000240ae800 JavaThread "RMI Scheduler(0)" daemon [_thread_blocked, id=7992, stack(0x00000000249e0000,0x0000000024ae0000)]
+  0x00000000240a3000 JavaThread "GC Daemon" daemon [_thread_blocked, id=16692, stack(0x00000000248e0000,0x00000000249e0000)]
+  0x00000000240a0800 JavaThread "RMI RenewClean-[192.168.56.1:55144]" daemon [_thread_blocked, id=16792, stack(0x00000000247e0000,0x00000000248e0000)]
+  0x0000000022ba5000 JavaThread "RMI TCP Accept-1099" daemon [_thread_in_native, id=7088, stack(0x0000000023ce0000,0x0000000023de0000)]
+  0x0000000022af6000 JavaThread "Service Thread" daemon [_thread_blocked, id=3288, stack(0x0000000023640000,0x0000000023740000)]
+=>0x0000000022a5a000 JavaThread "C1 CompilerThread3" daemon [_thread_in_native, id=15988, stack(0x0000000023540000,0x0000000023640000)]
+  0x0000000022a55000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=14888, stack(0x0000000023440000,0x0000000023540000)]
+  0x0000000022a4e800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=9264, stack(0x0000000023340000,0x0000000023440000)]
+  0x0000000022a4b000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=13888, stack(0x0000000023240000,0x0000000023340000)]
+  0x0000000022a49800 JavaThread "Attach Listener" daemon [_thread_blocked, id=12716, stack(0x0000000023140000,0x0000000023240000)]
+  0x0000000022a48800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=11956, stack(0x0000000023040000,0x0000000023140000)]
+  0x0000000022a40800 JavaThread "Finalizer" daemon [_thread_blocked, id=668, stack(0x0000000022e20000,0x0000000022f20000)]
+  0x0000000002618000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9368, stack(0x0000000022920000,0x0000000022a20000)]
+  0x00000000004be800 JavaThread "main" [_thread_blocked, id=784, stack(0x0000000002420000,0x0000000002520000)]
+
+Other Threads:
+  0x0000000020b37800 VMThread [stack: 0x0000000022820000,0x0000000022920000] [id=6032]
+  0x0000000022b19800 WatcherThread [stack: 0x00000000238a0000,0x00000000239a0000] [id=10672]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 5632K, used 4866K [0x0000000740600000, 0x0000000740f00000, 0x00000007c0000000)
+  eden space 5120K, 90% used [0x0000000740600000,0x0000000740a80b18,0x0000000740b00000)
+  from space 512K, 50% used [0x0000000740c80000,0x0000000740cc0000,0x0000000740d00000)
+  to   space 1536K, 0% used [0x0000000740b00000,0x0000000740b00000,0x0000000740c80000)
+ ParOldGen       total 5632K, used 1355K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 24% used [0x0000000641200000,0x0000000641352d28,0x0000000641780000)
+ Metaspace       used 6706K, capacity 6840K, committed 7040K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+
+Card table byte_map: [0x00000000119e0000,0x00000000125e0000] byte_map_base: 0x000000000e7d7000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000055c6a6d0
+ Begin Bits: [0x00000000135e0000, 0x0000000019598000)
+ End Bits:   [0x0000000019598000, 0x000000001f550000)
+
+Polling page: 0x0000000000470000
+
+CodeCache: size=245760Kb used=3139Kb max_used=3139Kb free=242620Kb
+ bounds [0x0000000002620000, 0x0000000002940000, 0x0000000011620000]
+ total_blobs=1144 nmethods=836 adapters=221
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1659.167 Thread 0x0000000022a5a000 nmethod 860 0x000000000292f350 code [0x000000000292f4e0, 0x000000000292f978]
+Event: 1659.167 Thread 0x0000000022a5a000  861   !   3       java.net.DualStackPlainSocketImpl::socketAccept (138 bytes)
+Event: 1659.167 Thread 0x0000000022a5a000 nmethod 861 0x000000000292fa90 code [0x000000000292fcc0, 0x0000000002930648]
+Event: 1659.224 Thread 0x0000000022a5a000  863       3       sun.rmi.transport.tcp.TCPTransport$ConnectionHandler::<init> (25 bytes)
+Event: 1659.224 Thread 0x0000000022a5a000 nmethod 863 0x0000000002930bd0 code [0x0000000002930d20, 0x0000000002930f30]
+Event: 1659.224 Thread 0x0000000022a5a000  864       3       java.util.concurrent.ThreadPoolExecutor::execute (132 bytes)
+Event: 1659.224 Thread 0x0000000022a5a000 nmethod 864 0x0000000002930fd0 code [0x0000000002931220, 0x0000000002932188]
+Event: 1659.224 Thread 0x0000000022a5a000  865       3       java.util.concurrent.SynchronousQueue::offer (31 bytes)
+Event: 1659.225 Thread 0x0000000022a5a000 nmethod 865 0x00000000029326d0 code [0x0000000002932860, 0x0000000002932bd8]
+Event: 1659.225 Thread 0x0000000022a5a000  866   !   3       sun.rmi.transport.tcp.TCPTransport$ConnectionHandler::run0 (1039 bytes)
+
+GC Heap History (10 events):
+Event: 30.948 GC heap before
+{Heap before GC invocations=3 (full 0):
+ PSYoungGen      total 2048K, used 1463K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 1536K, 64% used [0x0000000740600000,0x00000007406f5cf8,0x0000000740780000)
+  from space 512K, 93% used [0x0000000740800000,0x0000000740878020,0x0000000740880000)
+  to   space 512K, 0% used [0x0000000740780000,0x0000000740780000,0x0000000740800000)
+ ParOldGen       total 5632K, used 396K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 7% used [0x0000000641200000,0x0000000641263020,0x0000000641780000)
+ Metaspace       used 6075K, capacity 6194K, committed 6400K, reserved 1056768K
+  class space    used 711K, capacity 763K, committed 768K, reserved 1048576K
+Event: 30.949 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 2048K, used 512K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 1536K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740780000)
+  from space 512K, 100% used [0x0000000740780000,0x0000000740800000,0x0000000740800000)
+  to   space 512K, 0% used [0x0000000740980000,0x0000000740980000,0x0000000740a00000)
+ ParOldGen       total 5632K, used 548K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 9% used [0x0000000641200000,0x0000000641289030,0x0000000641780000)
+ Metaspace       used 6075K, capacity 6194K, committed 6400K, reserved 1056768K
+  class space    used 711K, capacity 763K, committed 768K, reserved 1048576K
+}
+Event: 30.949 GC heap before
+{Heap before GC invocations=4 (full 1):
+ PSYoungGen      total 2048K, used 512K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 1536K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740780000)
+  from space 512K, 100% used [0x0000000740780000,0x0000000740800000,0x0000000740800000)
+  to   space 512K, 0% used [0x0000000740980000,0x0000000740980000,0x0000000740a00000)
+ ParOldGen       total 5632K, used 548K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 9% used [0x0000000641200000,0x0000000641289030,0x0000000641780000)
+ Metaspace       used 6075K, capacity 6194K, committed 6400K, reserved 1056768K
+  class space    used 711K, capacity 763K, committed 768K, reserved 1048576K
+Event: 30.957 GC heap after
+Heap after GC invocations=4 (full 1):
+ PSYoungGen      total 2048K, used 0K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 1536K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740780000)
+  from space 512K, 0% used [0x0000000740780000,0x0000000740780000,0x0000000740800000)
+  to   space 512K, 0% used [0x0000000740980000,0x0000000740980000,0x0000000740a00000)
+ ParOldGen       total 5632K, used 890K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 15% used [0x0000000641200000,0x00000006412deaf8,0x0000000641780000)
+ Metaspace       used 6075K, capacity 6194K, committed 6400K, reserved 1056768K
+  class space    used 711K, capacity 763K, committed 768K, reserved 1048576K
+}
+Event: 1475.067 GC heap before
+{Heap before GC invocations=5 (full 1):
+ PSYoungGen      total 2048K, used 1536K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 1536K, 100% used [0x0000000740600000,0x0000000740780000,0x0000000740780000)
+  from space 512K, 0% used [0x0000000740780000,0x0000000740780000,0x0000000740800000)
+  to   space 512K, 0% used [0x0000000740980000,0x0000000740980000,0x0000000740a00000)
+ ParOldGen       total 5632K, used 890K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 15% used [0x0000000641200000,0x00000006412deaf8,0x0000000641780000)
+ Metaspace       used 6314K, capacity 6448K, committed 6784K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+Event: 1475.075 GC heap after
+Heap after GC invocations=5 (full 1):
+ PSYoungGen      total 3584K, used 416K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 3072K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740900000)
+  from space 512K, 81% used [0x0000000740980000,0x00000007409e8000,0x0000000740a00000)
+  to   space 512K, 0% used [0x0000000740900000,0x0000000740900000,0x0000000740980000)
+ ParOldGen       total 5632K, used 890K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 15% used [0x0000000641200000,0x00000006412deaf8,0x0000000641780000)
+ Metaspace       used 6314K, capacity 6448K, committed 6784K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+}
+Event: 1587.557 GC heap before
+{Heap before GC invocations=6 (full 1):
+ PSYoungGen      total 3584K, used 3486K [0x0000000740600000, 0x0000000740a00000, 0x00000007c0000000)
+  eden space 3072K, 99% used [0x0000000740600000,0x00000007408ff9f0,0x0000000740900000)
+  from space 512K, 81% used [0x0000000740980000,0x00000007409e8000,0x0000000740a00000)
+  to   space 512K, 0% used [0x0000000740900000,0x0000000740900000,0x0000000740980000)
+ ParOldGen       total 5632K, used 890K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 15% used [0x0000000641200000,0x00000006412deaf8,0x0000000641780000)
+ Metaspace       used 6479K, capacity 6648K, committed 6784K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+Event: 1587.566 GC heap after
+Heap after GC invocations=6 (full 1):
+ PSYoungGen      total 3584K, used 512K [0x0000000740600000, 0x0000000740d00000, 0x00000007c0000000)
+  eden space 3072K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740900000)
+  from space 512K, 100% used [0x0000000740900000,0x0000000740980000,0x0000000740980000)
+  to   space 512K, 0% used [0x0000000740c80000,0x0000000740c80000,0x0000000740d00000)
+ ParOldGen       total 5632K, used 1355K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 24% used [0x0000000641200000,0x0000000641352d28,0x0000000641780000)
+ Metaspace       used 6479K, capacity 6648K, committed 6784K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+}
+Event: 1628.233 GC heap before
+{Heap before GC invocations=7 (full 1):
+ PSYoungGen      total 3584K, used 3583K [0x0000000740600000, 0x0000000740d00000, 0x00000007c0000000)
+  eden space 3072K, 99% used [0x0000000740600000,0x00000007408ffcd0,0x0000000740900000)
+  from space 512K, 100% used [0x0000000740900000,0x0000000740980000,0x0000000740980000)
+  to   space 512K, 0% used [0x0000000740c80000,0x0000000740c80000,0x0000000740d00000)
+ ParOldGen       total 5632K, used 1355K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 24% used [0x0000000641200000,0x0000000641352d28,0x0000000641780000)
+ Metaspace       used 6571K, capacity 6712K, committed 7040K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+Event: 1628.281 GC heap after
+Heap after GC invocations=7 (full 1):
+ PSYoungGen      total 5632K, used 256K [0x0000000740600000, 0x0000000740f00000, 0x00000007c0000000)
+  eden space 5120K, 0% used [0x0000000740600000,0x0000000740600000,0x0000000740b00000)
+  from space 512K, 50% used [0x0000000740c80000,0x0000000740cc0000,0x0000000740d00000)
+  to   space 1536K, 0% used [0x0000000740b00000,0x0000000740b00000,0x0000000740c80000)
+ ParOldGen       total 5632K, used 1355K [0x0000000641200000, 0x0000000641780000, 0x0000000740600000)
+  object space 5632K, 24% used [0x0000000641200000,0x0000000641352d28,0x0000000641780000)
+ Metaspace       used 6571K, capacity 6712K, committed 7040K, reserved 1056768K
+  class space    used 749K, capacity 800K, committed 896K, reserved 1048576K
+}
+
+Deoptimization events (1 events):
+Event: 30.932 Thread 0x0000000022b9d000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x000000000277804c method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+
+Internal exceptions (10 events):
+Event: 1655.518 Thread 0x0000000022de2000 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408ebc68) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1655.518 Thread 0x0000000022de2000 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408ebe98) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.234 Thread 0x0000000022d57000 Exception <a 'sun/net/ConnectionResetException': > (0x0000000740904308) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.234 Thread 0x0000000022d57000 Exception <a 'sun/net/ConnectionResetException': > (0x0000000740904538) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.244 Thread 0x00000000241c8800 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408fe748) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.244 Thread 0x00000000241c8800 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408fe978) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.245 Thread 0x0000000022d55000 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408f6b60) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.245 Thread 0x0000000022d55000 Exception <a 'sun/net/ConnectionResetException': > (0x0000000740962448) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.597 Thread 0x0000000022d58800 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408fbfc8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+Event: 1657.597 Thread 0x0000000022d58800 Exception <a 'sun/net/ConnectionResetException': > (0x00000007408fc1f8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u112\7884\hotspot\src\share\vm\prims\jni.cpp, line 735]
+
+Events (10 events):
+Event: 1628.283 Executing VM operation: RevokeBias
+Event: 1628.283 Executing VM operation: RevokeBias done
+Event: 1628.283 Executing VM operation: RevokeBias
+Event: 1628.283 Executing VM operation: RevokeBias done
+Event: 1628.283 Executing VM operation: BulkRevokeBias
+Event: 1628.284 Executing VM operation: BulkRevokeBias done
+Event: 1630.582 Thread 0x0000000022a5a000 flushing nmethod 0x00000000027bde10
+Event: 1633.965 Thread 0x00000000241e9000 Thread added: 0x00000000241e9000
+Event: 1633.981 Thread 0x00000000241e8000 Thread added: 0x00000000241e8000
+Event: 1633.997 Thread 0x00000000241e4800 Thread added: 0x00000000241e4800
+
+
+Dynamic libraries:
+0x00007ff616bc0000 - 0x00007ff616bc7000 	C:\Program Files\Java\jdk1.8.0_112\bin\rmiregistry.exe
+0x00007ffadc5a0000 - 0x00007ffadc781000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffad9fa0000 - 0x00007ffada052000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffad9370000 - 0x00007ffad95e3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00000000582b0000 - 0x00000000582df000 	C:\Program Files\Java\jdk1.8.0_112\bin\jli.dll
+0x0000000058100000 - 0x00000000581d2000 	C:\Program Files\Java\jdk1.8.0_112\bin\MSVCR100.dll
+0x00007ffadc2c0000 - 0x00007ffadc361000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffad9a50000 - 0x00007ffad9aee000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffadac80000 - 0x00007ffadacdb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffada060000 - 0x00007ffada184000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffadc370000 - 0x00007ffadc500000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffad8aa0000 - 0x00007ffad8ac0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffad9f40000 - 0x00007ffad9f68000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffad95f0000 - 0x00007ffad9782000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffad92d0000 - 0x00007ffad936f000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffad91d0000 - 0x00007ffad92ca000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffacdbc0000 - 0x00007ffacde29000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.228_none_fb4599993062b194\COMCTL32.dll
+0x00007ffada950000 - 0x00007ffadac73000 	C:\WINDOWS\System32\combase.dll
+0x00007ffad8a20000 - 0x00007ffad8a9a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffad9f70000 - 0x00007ffad9f9d000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000058020000 - 0x00000000580f2000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\msvcr100.dll
+0x0000000055450000 - 0x0000000055cea000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\server\jvm.dll
+0x00007ffadc500000 - 0x00007ffadc508000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffad5de0000 - 0x00007ffad5e03000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffad5db0000 - 0x00007ffad5dda000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffad9790000 - 0x00007ffad97d9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffad3f80000 - 0x00007ffad3f89000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffada620000 - 0x00007ffada68c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffad2d70000 - 0x00007ffad2d7a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x0000000058240000 - 0x000000005824f000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\verify.dll
+0x0000000057ff0000 - 0x0000000058019000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\java.dll
+0x0000000058220000 - 0x0000000058236000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\zip.dll
+0x00007ffadae80000 - 0x00007ffadc2c0000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffada3e0000 - 0x00007ffada489000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffad8ac0000 - 0x00007ffad91cd000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffada690000 - 0x00007ffada6e1000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffad8920000 - 0x00007ffad8931000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffad8950000 - 0x00007ffad896f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffad88b0000 - 0x00007ffad88fc000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffad8940000 - 0x00007ffad894a000 	C:\WINDOWS\System32\FLTLIB.DLL
+0x00007ffad8280000 - 0x00007ffad8297000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007ffad7cb0000 - 0x00007ffad7ce3000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007ffad83b0000 - 0x00007ffad83d5000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffad87e0000 - 0x00007ffad8808000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ffad82a0000 - 0x00007ffad82ab000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x0000000057fd0000 - 0x0000000057fea000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\net.dll
+0x00007ffad80d0000 - 0x00007ffad8136000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffad7e50000 - 0x00007ffad7e88000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffada7e0000 - 0x00007ffada7e8000 	C:\WINDOWS\System32\NSI.dll
+0x00007ffad4780000 - 0x00007ffad4796000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x00007ffad46e0000 - 0x00007ffad46fa000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x0000000057fb0000 - 0x0000000057fc1000 	C:\Program Files\Java\jdk1.8.0_112\jre\bin\nio.dll
+0x00007ffacf410000 - 0x00007ffacf426000 	C:\WINDOWS\system32\napinsp.dll
+0x00007ffacf3f0000 - 0x00007ffacf40a000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x00007ffad62b0000 - 0x00007ffad62c9000 	C:\WINDOWS\system32\NLAapi.dll
+0x00007ffad7e90000 - 0x00007ffad7f4e000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffacf470000 - 0x00007ffacf47e000 	C:\WINDOWS\System32\winrnr.dll
+0x00007ffad39f0000 - 0x00007ffad39fa000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffad5810000 - 0x00007ffad5882000 	C:\WINDOWS\System32\fwpuclnt.dll
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Java\jdk1.8.0_112 -Xms8m 
+java_command: sun.rmi.registry.RegistryImpl
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_112/lib/tools.jar;C:\Program Files\Java\jdk1.8.0_112/classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+USERNAME=RGAMBOAH
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.1)
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 25084228k(18151504k free), swap 100581700k(312k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.112-b15) for windows-amd64 JRE (1.8.0_112-b15), built on Sep 22 2016 21:31:56 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Aug 28 17:04:39 2018
+elapsed time: 1659 seconds (0d 0h 27m 39s)
+

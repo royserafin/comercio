@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://23.96.10.86:8080/DummyWebService/loopbackWS?WSDL" uri="xml-resources/web-service-references/loopbackWS/wsdl/23.96.10.86_8080/DummyWebService/loopbackWS.wsdl"/>
+    <system systemId="http://23.96.10.86:8080/DummyWebService/loopbackWS?xsd=1" uri="xml-resources/web-service-references/loopbackWS/wsdl/23.96.10.86_8080/DummyWebService/loopbackWS.xsd_1.xsd"/>
+</catalog>

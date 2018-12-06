@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.shop.model">
+    <module_version install_time="1541382422231" last="true" origin="installer" specification_version="1.0">
+        <file crc="149780205" name="config/Modules/org-shop-model.xml"/>
+        <file crc="497954682" name="modules/ext/CustomerLibrary.jar"/>
+        <file crc="3249505360" name="modules/org-shop-model.jar"/>
+    </module_version>
+</module>

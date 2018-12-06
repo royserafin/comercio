@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://148.205.199.131:43800/TiendaElectronica/AlmacenService?WSDL" uri="../ServicioAlmacen/148.205.199.131_43800/TiendaElectronica/AlmacenService.wsdl"/>
+    <system systemId="http://148.205.199.131:43800/TiendaElectronica/AlmacenService?xsd=1" uri="../ServicioAlmacen/148.205.199.131_43800/TiendaElectronica/AlmacenService.xsd_1.xsd"/>
+    <system systemId="http://148.205.199.131:43800/MensajeriaExpress/EnvioPaquetesService?WSDL" uri="../ServicioMensajeria/148.205.199.131_43800/MensajeriaExpress/EnvioPaquetesService.wsdl"/>
+    <system systemId="http://148.205.199.131:43800/MensajeriaExpress/EnvioPaquetesService?xsd=1" uri="../ServicioMensajeria/148.205.199.131_43800/MensajeriaExpress/EnvioPaquetesService.xsd_1.xsd"/>
+    <system systemId="http://148.205.199.131:43800/PagoOnline/PasarelaPagoService?WSDL" uri="../ServicioPago/148.205.199.131_43800/PagoOnline/PasarelaPagoService.wsdl"/>
+    <system systemId="http://148.205.199.131:43800/PagoOnline/PasarelaPagoService?xsd=1" uri="../ServicioPago/148.205.199.131_43800/PagoOnline/PasarelaPagoService.xsd_1.xsd"/>
+</catalog>

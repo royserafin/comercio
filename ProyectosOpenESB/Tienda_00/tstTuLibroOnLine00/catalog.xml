@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://148.205.199.131:9080/VentaLibrosWSDLService/VentaLibrosWSDLPort?WSDL" uri="xml-resources/web-service-references/VentaLibrosWSDLPort/wsdl/148.205.199.131_9080/VentaLibrosWSDLService/VentaLibrosWSDLPort.wsdl"/>
+</catalog>

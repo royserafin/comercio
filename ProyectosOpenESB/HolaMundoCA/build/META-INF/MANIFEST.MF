@@ -1,0 +1,4 @@
+Bundle-Name: HolaMundoCA
+Bundle-SymbolicName: HolaMundoCA
+Bundle-ManifestVersion: 2
+Bundle-Version: 1.0.0

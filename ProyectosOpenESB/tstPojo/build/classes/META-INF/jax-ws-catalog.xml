@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:9080/MyCalculatorCAService1/casaPort1?WSDL" uri="wsdl/localhost_9080/MyCalculatorCAService1/casaPort1.wsdl"/>
+    <system systemId="http://ubuntuinspiron5537:9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculator.wsdl" uri="wsdl/ubuntuinspiron5537_9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculator.wsdl"/>
+    <system systemId="http://ubuntuinspiron5537:9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculatorSchema.xsd" uri="wsdl/ubuntuinspiron5537_9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculatorSchema.xsd"/>
+    <system systemId="http://148.205.199.131:9080/MyCalculatorCAService1/casaPort1?WSDL" uri="wsdl/148.205.199.131_9080/MyCalculatorCAService1/casaPort1.wsdl"/>
+    <system systemId="http://RGGH3.itam.mx:9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculator.wsdl" uri="wsdl/RGGH3.itam.mx_9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculator.wsdl"/>
+    <system systemId="http://RGGH3.itam.mx:9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculatorSchema.xsd" uri="wsdl/RGGH3.itam.mx_9080/MyCalculatorCA-sun-http-binding/MyCalculator/MyCalculatorSchema.xsd"/>
+</catalog>
